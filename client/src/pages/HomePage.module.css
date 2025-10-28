@@ -1,0 +1,96 @@
+/* src/pages/HomePage.module.css */
+
+/* --- Login Button (Positioned relative to viewport) --- */
+.loginButton {
+  position: fixed; /* Fixed position relative to the browser window */
+  top: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #8a0000; /* Maroon text */
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Slightly stronger shadow */
+  transition: all 0.2s;
+  z-index: 1000; /* Ensure it's above other content */
+}
+.loginButton:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* --- Hero Header (Full Width, Maroon) --- */
+.heroHeader {
+  text-align: center;
+  padding: 80px 30px; /* Keep vertical padding */
+  background-color: #8a0000; /* Solid Maroon */
+  color: white;
+  /* Remove container constraints */
+  width: 100%;
+  margin-left: calc(-50vw + 50%); /* Centers full-width element */
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 40px;
+  /* Remove border radius and shadow if you want it flush */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.heroHeader h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.heroHeader p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+/* --- Container for the rest of the content --- */
+.homeContainer {
+  max-width: 1400px; /* Keeps the cards centered */
+  margin: auto;
+  padding: 0 24px 24px 24px; /* Adjust padding as needed */
+  position: relative; /* Needed for positioning context if login button wasn't fixed */
+}
+
+/* --- Club Grid and Error Styles (No change needed) --- */
+.clubGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.error {
+  color: #D8000C;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  padding: 40px;
+  background: #FFD2D2;
+  border: 1px solid #D8000C;
+  border-radius: 8px;
+}
+/* Add these styles at the end of HomePage.module.css */
+
+.titleContainer {
+  display: flex; /* Arrange logo and text side-by-side */
+  align-items: center; /* Vertically center them */
+  justify-content: center; /* Horizontally center them */
+  gap: 15px; /* Add some space between logo and text */
+  margin-bottom: 10px; /* Space below the title group */
+}
+
+.headerLogo {
+  height: 80px; /* Adjust the size as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Adjust h1 margin if needed */
+.heroHeader h1 {
+  margin-bottom: 0; /* Remove default bottom margin if any */
+}

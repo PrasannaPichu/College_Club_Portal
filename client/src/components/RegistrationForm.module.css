@@ -1,0 +1,96 @@
+/* src/components/RegistrationForm.module.css */
+.formContainer {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.formContainer h3 {
+  font-size: 1.6rem;
+  margin-top: 0;
+  text-align: center;
+  color: #222;
+  font-weight: 700;
+}
+
+.formContainer p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #8a0000;
+  box-shadow: 0 0 0 3px rgba(138, 0, 0, 0.15);
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+.formButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  /* Changed from blue to maroon */
+  background-color: #8a0000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.formButton:hover {
+  background-color: #5a0000; /* Darker maroon on hover */
+  transform: translateY(-2px);
+}
+
+.formButton:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.errorMsg {
+  color: #D8000C;
+  font-weight: 500;
+  text-align: center;
+  background: #FFD2D2;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.successMsg {
+  color: #198754;
+  font-weight: 600;
+  text-align: center;
+}

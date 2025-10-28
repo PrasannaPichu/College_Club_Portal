@@ -1,0 +1,102 @@
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.loginContainer {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  border-top: 5px solid #8a0000;
+}
+
+.toggleButtons {
+  display: flex;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.toggleButtons button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: #f0f0f0;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggleButtons button.active {
+  background: #8a0000;
+  color: #fff;
+}
+
+.loginForm h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.loginForm p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #8a0000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.submitButton:disabled {
+  background-color: #aaa;
+}
+
+.errorMsg {
+  color: #D8000C;
+  font-weight: 500;
+  text-align: center;
+  background: #FFD2D2;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}

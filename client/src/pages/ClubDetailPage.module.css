@@ -1,0 +1,113 @@
+/* src/pages/ClubDetailPage.module.css */
+.pageContainer {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+.clubHeader {
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.clubName {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.clubOrigin {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0 0 0;
+  font-weight: 400;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.mainContent {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.mainContent h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  /* Changed border from blue to maroon */
+  border-bottom: 3px solid #8a0000;
+  padding-bottom: 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.eventGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.eventCard {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.eventCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.eventInfo {
+  padding: 15px;
+}
+
+.eventInfo h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.eventInfo p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 24px;
+  align-self: flex-start;
+}
+
+.error {
+  color: #D8000C;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .contentWrapper {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    grid-row: 1;
+  }
+}
